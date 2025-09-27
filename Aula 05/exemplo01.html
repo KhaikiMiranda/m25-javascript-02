@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+            background-color: aqua;
+        }
+        /* Selecionando a tag com id = videos */
+        #videos video {
+            width: 300px;
+        }
+        /* Selecionando por classe */
+        .cor-vermelha {
+            color: red;
+        }
+    </style>
     <title>Meu primeiro HTML</title>
 </head>
 <body>
@@ -63,7 +76,8 @@
        </section>
     </section>
     <section id="midias">
-        <header><h4>Imagens</h4></header>
+        <header>
+            <h4 class="cor-vermelha">Imagens</h4></header>
         <figure>
             <img src="https://i.pinimg.com/736x/e2/91/67/e291678d53ff6ad45ba0283b6e98f9da.jpg" alt="Gato olhando de lado">
             <figcaption>Imagem de um gato - Fonte: Pesquisa do Google</figc aption>
@@ -123,5 +137,36 @@
             <input type="submit" value="Enviar">
         </form>
     </section>
+    <section id="iframes">
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cvzbIb8U9nU?si=7h0YorqcRPtf0sCR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="desenho">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red" />
+        </svg>
+    </section>
+    <section id="outras-tags">
+        <progress value="70" max="100"></progress>
+        <meter value="0.6">60%</meter>
+        <time datetime="2025-09-20">20 de Setembro de 2025</time>
+        <!-- Usada para mostrar um código em uma programação-->
+        <code>console.log("Olá");</code>
+        <!-- Usada para mostrar um texto da forma que estiver escrito com quebras de linhas, espaços, tabulações-->
+        <pre>
+        for i in range(5):
+            print(i)
+        </pre>
+    </section>
+    <section>
+        <aside>
+            <h3>Conteúdo a Parte</h3>
+        </aside>
+        <footer>
+            <a href="https://www.instagram.com/khaikimiranda/">Instagram</a> | Facebook: xxxxx | WhatsApp: (xx)xxxxx-xxxx
+        </footer>
+    </section>
+    <!--JavaScript sempre ficará na parte final do documento-->
+    <script>alert("Olá, pessoal!");</script>
 </body>
 </html>
