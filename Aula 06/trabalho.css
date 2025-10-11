@@ -1,1 +1,140 @@
 /* Início do CSS */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+header h1 {
+    margin: 0;
+    color: rgb(115, 221, 129);
+    text-align: center;
+}
+header nav {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+nav {
+    display: flex;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgb(233, 233, 233);
+    color: rgb(22, 173, 42);
+    font-weight: bold;
+}
+/* Seletor de pseudo-class -- hover */
+nav ul li a:hover {
+    background-color: rgb(177, 177, 177);
+}
+#introducao h2 {
+    color: rgb(6, 128, 26);
+    font-weight: bold;
+    text-align: center;
+}
+#introducao h2 ~ p {
+    text-align: center;
+    color: rgb(17, 80, 38);
+}
+#introducao > p:first-of-type {
+    text-align: center;
+    color: brown;
+}
+#introducao img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#introducao figcaption {
+    text-align: center;
+}
+#desenvolvimento h2 {
+    color: rgb(6, 128, 26);
+    font-weight: bold;
+    text-align: center;
+}
+#desenvolvimento h2 ~ p {
+    margin-left: 600px;
+    max-width: 1200px;
+    color: rgb(17, 80, 38);
+}
+#desenvolvimento h2 + p {
+    margin-left: 600px;
+    max-width: 1200px;
+    color: brown;
+}
+#desenvolvimento img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#desenvolvimento figcaption {
+    text-align: center;
+}
+#conclusao h2 {
+    color: rgb(6, 128, 26);
+    font-weight: bold;
+    text-align: center;
+}
+#conclusao > p:first-of-type {
+    text-align: center;
+    color: brown
+}
+#conclusao h2 ~ p {
+    text-align: center;
+    color: rgb(17, 80, 38);
+}
+#conclusao img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#conclusao figcaption {
+    text-align: center;
+}
+.topicos-extras {
+    position: absolute;
+    right: 35px;
+    top: 1700px;
+    text-align: left;
+}
+.topicos-extras h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.topicos-extras p {
+    margin: 6px 0;
+    font-size: 16px;
+    display: block;
+    color:rgb(102, 0, 218);
+    background-color: beige;
+}
+.topicos-extras p:hover {
+    background-color: burlywood;
+}
+.redes-sociais p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.redes-sociais a {
+    text-decoration: none;
+}
