@@ -2,6 +2,14 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Fundo */
+body {
+    height: 100%;
+    background-color: #33535f;
+    margin: 0;
+    padding: 0;
+}
+/* Cabeçalho */
 header {
     position: relative;
     text-align: center;
@@ -31,18 +39,22 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    color: blue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: rgb(233, 233, 233);
+    background-color: #2b4650;
     color: rgb(22, 173, 42);
     font-weight: bold;
 }
 /* Seletor de pseudo-class -- hover */
 nav ul li a:hover {
-    background-color: rgb(177, 177, 177);
+    background-color: #3a5f6d;
+    transition: 0.5s;
 }
+section {
+    margin: 3em;
+}
+/* Parte de Introdução */
 #introducao h2 {
     color: rgb(6, 128, 26);
     font-weight: bold;
@@ -50,19 +62,25 @@ nav ul li a:hover {
 }
 #introducao h2 ~ p {
     text-align: center;
-    color: rgb(17, 80, 38);
+    color: white;
 }
 #introducao > p:first-of-type {
     text-align: center;
-    color: brown;
+    color: #222725;
 }
 #introducao img {
     width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 #introducao figcaption {
+    text-align: center;
+    color: #B7B7B7;
+}
+/* Parte de Desenvolvimento */
+#desenvolvimento {
     text-align: center;
 }
 #desenvolvimento h2 {
@@ -71,23 +89,30 @@ nav ul li a:hover {
     text-align: center;
 }
 #desenvolvimento h2 ~ p {
-    margin-left: 600px;
     max-width: 1200px;
-    color: rgb(17, 80, 38);
+    margin: 0 auto;
+    color: white;
 }
 #desenvolvimento h2 + p {
-    margin-left: 600px;
     max-width: 1200px;
-    color: brown;
+    margin: 0 auto;
+    color: #222725;
 }
 #desenvolvimento img {
     width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 #desenvolvimento figcaption {
     text-align: center;
+    color: #B7B7B7;
+}
+/* Parte de Conclusão */
+#conclusao {
+    display: block;
+    width: 50%;
 }
 #conclusao h2 {
     color: rgb(6, 128, 26);
@@ -96,25 +121,33 @@ nav ul li a:hover {
 }
 #conclusao > p:first-of-type {
     text-align: center;
-    color: brown
+    color: #222725;
 }
 #conclusao h2 ~ p {
     text-align: center;
-    color: rgb(17, 80, 38);
+    color: white;
 }
 #conclusao img {
     width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 #conclusao figcaption {
     text-align: center;
+    color: #B7B7B7;
 }
+#finalizacao {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+}
+/* Parte do Aside */
 .topicos-extras {
-    position: absolute;
-    right: 35px;
-    top: 1700px;
+    display: block;
+    width: 50%;
     text-align: left;
 }
 .topicos-extras h2 {
@@ -125,16 +158,31 @@ nav ul li a:hover {
     margin: 6px 0;
     font-size: 16px;
     display: block;
-    color:rgb(102, 0, 218);
-    background-color: beige;
+    color:rgb(204, 99, 204);
+    background-color: #2b4650;
+    padding: 10px;
+    border-radius: 4px;
 }
 .topicos-extras p:hover {
-    background-color: burlywood;
+    background-color: #3a5f6d;
+    transition: 0.5s;
+}
+/* Parte do Footer */
+footer {
+    background-color: #21353d;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
 }
 .redes-sociais p {
     font-size: 16px;
     font-weight: bold;
+    color: white;
+    margin-left: 45px;
 }
 .redes-sociais a {
     text-decoration: none;
+    color: violet;
 }
